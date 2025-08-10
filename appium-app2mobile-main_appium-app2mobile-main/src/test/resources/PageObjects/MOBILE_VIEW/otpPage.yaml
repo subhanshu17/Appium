@@ -1,0 +1,9 @@
+otpPopupTitle:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.google.android.gms:id/consent_description"]'
+allowButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Allow"] | //*[@text="ALLOW"]'
+otpContinueButton:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="OTP_ContinueButton"]'

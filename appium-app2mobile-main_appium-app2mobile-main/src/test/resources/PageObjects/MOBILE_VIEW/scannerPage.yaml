@@ -1,0 +1,57 @@
+permissionsPopupTitle:
+  findBy: 'xpath'
+  locator: '//*[@text="Permissions"]'
+permissionDropdown:
+  findBy: 'xpath'
+  locator: '//*[@text="{{resourceType}}"]/following-sibling::*[contains(@resource-id,"descriptionToggleBtn")]'
+permitButton:
+  findBy: 'xpath'
+  locator: '//*[contains(@resource-id,"btn_permit")]'
+resourcePermissionPopupMessage:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.android.permissioncontroller:id/permission_message"]'
+permittedMessage:
+  findBy: 'xpath'
+  locator: '//*[contains(@resource-id,"btn_accepted")]'
+allowOnlyUsingAppButton:
+  findBy: 'xpath'
+  locator: '//*[contains(@resource-id,"permission_allow_foreground_only_button")]'
+locationToggle:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="android:id/switch_widget"]'
+backButton:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="Back"]'
+bluetoothPermissionMessage:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="android:id/message"]'
+searchManuallyButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Search Manually"]'
+chooseYourWatchHeader:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/choose_band"]'
+deviceName:
+  findBy: 'xpath'
+  locator: '//*[contains(@resource-id,"cl_unique_device")]/*[contains(@resource-id,"name")]'
+pager:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/view_pager"]'
+dotIndicators:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/dot"]'
+continueButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Continue"]'
+yourWatchIsUpToDate:
+  findBy: 'xpath'
+  locator: '//*[@text="Your watch is up to date"]'
+okButton:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/up_to_date_ok_button"]'
+allowButton:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.android.permissioncontroller:id/grant_dialog"]/*[last()]/*[1] | //*[@text="Allow"]'
+cancelButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Cancel"]'

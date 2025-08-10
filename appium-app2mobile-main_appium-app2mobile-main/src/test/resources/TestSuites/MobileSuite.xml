@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Fastrack Mobile App Automation">
+<!--	<listeners>-->
+<!--		<listener-->
+<!--			class-name="automation.tests.retry_util.RetryListener" />-->
+<!--	</listeners>-->
+	<test name="Fastrack app" parallel="none">
+		<classes>
+			<class name="automation.tests.regression.FastrackSmartAutomation"/>
+			<class name="automation.tests.regression.VerifySettings"/>
+		</classes> 
+	</test>
+</suite> 

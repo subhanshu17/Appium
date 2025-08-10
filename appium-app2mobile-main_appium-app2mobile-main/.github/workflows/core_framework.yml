@@ -1,0 +1,41 @@
+name: Core Framework Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '23'
+
+      - name: Download and Install Maven
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Invoke-WebRequest -Uri https://archive.apache.org/dist/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip -OutFile maven.zip
+          Expand-Archive -Path maven.zip -DestinationPath "$env:RUNNER_TEMP\maven"
+          $mavenPath = "$env:RUNNER_TEMP\maven\apache-maven-3.9.6\bin"
+          "$mavenPath" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+      - name: Verify Maven Installation
+        run: mvn -v
+
+      - name: Build with Maven and execute scripts
+        run: mvn clean install test -DtestSuite="MobileSuite.xml" --file pom.xml
+        continue-on-error: true
+
+      - name: Upload extent reports to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-reports
+          path: target/allure-results

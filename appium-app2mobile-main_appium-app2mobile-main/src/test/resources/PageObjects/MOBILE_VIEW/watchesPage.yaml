@@ -1,0 +1,18 @@
+watchSelection:
+  findBy: 'xpath'
+  locator: '//*[contains(@text,"Default")]/..//*[@resource-id="com.titan.fastrack.reflex:id/container"][1]/*[1]'
+deleteWatch:
+  findBy: 'xpath'
+  locator: '(//*[@text="Delete"])[last()]'
+deleteWatches:
+  findBy: 'xpath'
+  locator: '//*[@text="Delete"]'
+installWatch:
+  findBy: 'xpath'
+  locator: '//*[@text="Install on Watch"]'
+watchInstallation:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="close"]/following-sibling::*[1]'
+tvPercentage:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/percentageTv"]'
