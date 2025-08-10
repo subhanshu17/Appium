@@ -1,0 +1,33 @@
+# Following are the allowed values for whereToRun
+# local, saucelabs, browserstack
+whereToRun: local
+
+# Following are the allowed values for test environments:
+# stage, qa, production
+testEnvironment: production
+ 
+# Following are the allowed values and its description
+# MOBILE - To run automation.tests on mobile device like iPhone and iOS
+# DESKTOP - To run automation.tests on desktop platforms like Windows, MAC, and Linux
+deviceType: MOBILE
+ 
+# Following are the allowed values for browsers:
+# CHROME - To run automation.tests on chrome browser
+# SAFARI - To run automation.tests on safari browser
+webBrowser: chrome
+
+
+automationType: appbased
+
+appPackage: com.titan.fastrack.reflex
+
+appActivity: fastrack.reflex.DefaultIconAlias
+
+# Following are the allowed values for OS
+# iOS - OS to be given for iPhRefactor_Mobile_Androidone devices
+# Android - OS for Android devices
+# Windows - To run automation.tests on Windows desktop browser
+# MAC - To run automation.tests on MAC desktop browser
+# Linux - To run automation.tests on Linux desktop browser
+#os: EMULATE_CHROME
+os: Android

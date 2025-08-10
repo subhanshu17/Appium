@@ -1,0 +1,4 @@
+applicationUrls:
+  stage: https://stage.fastrack.com
+  qa: https://qa.fastrack.com
+  production: https://fastrack.com

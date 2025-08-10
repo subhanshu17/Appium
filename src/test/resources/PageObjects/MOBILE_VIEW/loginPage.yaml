@@ -1,0 +1,31 @@
+skipToSignupButton:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/skip_sign_up"]'
+# Product Details
+termsAndConditionsRadioButton:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="PermissionTermsConditionsCheckbox"]'
+acceptButton:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="PermissionAcceptButton"]'
+skipThisStepButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Skip this step"]'
+mobileNumberInput:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/mobile_number_input"]'
+registerWithSmsButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Register with SMS"]/ancestor::android.widget.RelativeLayout'
+
+
+
+#goalsDropdown:
+#  findBy: 'xpath'
+#  locator: '//*[@text="Goals"]/following-sibling::*[@resource-id="com.titan.fastrack.reflex:id/menu_toggle_btn"]'
+#stepGalItem:
+#  findBy: 'xpath'
+#  locator: '//*[@text="Step Goal"]/ancestor::*[@resource-id="com.titan.fastrack.reflex:id/settings_details_item"]'
+#stepGoalInput:
+#  findBy: 'xpath'
+#  locator: '//*[@text="Steps"]/../*[1]'

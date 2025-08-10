@@ -1,0 +1,3 @@
+watchesIcon:
+  findBy: 'xpath'
+  locator: '//*[@resource-id="com.titan.fastrack.reflex:id/bottom_navigation_container"]/android.view.ViewGroup[3]'

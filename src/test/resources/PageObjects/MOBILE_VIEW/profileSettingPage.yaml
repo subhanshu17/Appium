@@ -1,0 +1,43 @@
+howDoWeCallYou:
+  findBy: 'xpath'
+  locator: '//*[@text="How do we call you?"]'
+
+continueButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Continue"]'
+
+selectYourGender:
+  findBy: 'xpath'
+  locator: '//*[@text="Select your gender"]'
+
+birthdayPrompt:
+  findBy: 'xpath'
+  locator: "//*[@text=\"When's your birthday?\"]"
+
+heightPrompt:
+  findBy: 'xpath'
+  locator: '//*[@text="How tall are you?"]'
+
+weightPrompt:
+  findBy: 'xpath'
+  locator: '//*[@text="How much do you weigh?"]'
+
+sleepGoalPrompt:
+  findBy: 'xpath'
+  locator: "//*[@text=\"Let's set a sleep goal\"]"
+
+multisportGoalPrompt:
+  findBy: 'xpath'
+  locator: "//*[@text=\"Let's set a goal for multisport\"]"
+
+stepGoalPrompt:
+  findBy: 'xpath'
+  locator: "//*[@text=\"Let's set a step goal\"]"
+
+skipButton:
+  findBy: 'xpath'
+  locator: '//*[@text="Skip"]'
+
+closeIcon:
+  findBy: 'xpath'
+  locator: '//*[@content-desc="close"]'

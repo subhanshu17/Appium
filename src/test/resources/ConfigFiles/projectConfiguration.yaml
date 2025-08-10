@@ -1,0 +1,9 @@
+# It is the page objects root folder name and can be find at path "/src/test/resources/"
+# Update its value if you want to rename it
+pageObjectsRootFolderName: "PageObjects"
+
+# It is the location where you want to save the test execution reports
+# This location should be relative to the target folder
+reportsPath: ""
+
+waitTimeInSeconds: 30
